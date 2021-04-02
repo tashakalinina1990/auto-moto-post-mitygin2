@@ -1,0 +1,41 @@
+.tabs {
+  width: 100%;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+.tabs__controls {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tabs__control {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 50px;
+  border: 1px solid $grey;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: $main-text;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+
+  &:hover,
+  &:focus {
+    border-color: $main-text;
+  }
+}
+
+.tabs__control--active {
+  background-color: $accent;
+  color: $white;
+  border-color: $accent;
+  cursor: not-allowed;
+}
